@@ -1,0 +1,33 @@
+---
+layout: none
+---
+
+<html>
+<head>
+  <title>{{ page.title | default: site.title }}</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <a href="{{ '/' | relative_url }}">
+        <svg class="best-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 94.67 111.87">
+          <path d="M79,64v-.24c8.24-2.59,11.69-10.84,11.69-17.6C90.73,29.89,78.79,24,66,24H53.15V0H47.76A26.08,26.08,0,0,0,21.91,24H0v87.89H62.66c26.59,0,32-14.89,32-26.59C94.67,75.8,89.25,65.71,79,64ZM23.88,24.68A24.06,24.06,0,0,1,47.76,2v24.5h0V40h6c9.85,0,12.31,3.94,12.31,9.48,0,6.52-3.45,9.48-9,9.48H23.88ZM59.09,95.13H23.88V74.2H56.63c8.37,0,12.68,3.7,12.68,10.59C69.31,90.33,66.48,95.13,59.09,95.13Z" />
+        </svg>
+      </a>
+
+      <h1 class="site-title">
+        <strong>Best</strong> Immobilien
+      </h1>
+    </header>
+
+    {{ content }}
+
+    <footer>
+      <a href="{{ 'impressum' | relative_url }}">Impressum</a>
+      |
+      <a href="{{ 'datenschutz' | relative_url }}">Datenschutz</a>
+    </footer>
+  </div>
+</body>
+</html>
